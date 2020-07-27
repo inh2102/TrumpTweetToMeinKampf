@@ -1,7 +1,5 @@
 # Trump Tweet to Mein Kampf
 
-Just how similar is a given Trump tweet to a line from Hitler's Mein Kampf? Let's find out...
-
 ### Just how similar is a given Trump tweet to a line from Hitler’s Mein Kampf? Let’s find out…
 
 This script uses four packages: tidyverse (notation), quanteda (text
