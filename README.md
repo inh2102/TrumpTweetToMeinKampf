@@ -106,3 +106,22 @@ The FAKE NEWS media (failing @nytimes, @NBCNews, @ABC, @CBS, @CNN) is not my ene
     
     5 Those who effectively combat this mortal enemy of our people, who is at the same time the enemy of all Aryan peoples and all culture, can only expect to arouse opposition on the part of this race and become the object of its slanderous attacks
 ```
+
+Citations:
+
+Benoit K, Watanabe K, Wang H, Nulty P, Obeng A, Müller S, Matsuo A (2018). “quanteda: An R package for the quantitative
+analysis of textual data.” _Journal of Open Source Software_, *3*(30), 774. doi: 10.21105/joss.00774 (URL:
+https://doi.org/10.21105/joss.00774), <URL: https://quanteda.io>.
+
+Brown B. Trump Twitter Archive [Internet]. Trumptwitterarchive.com. 2019. Available from: http://www.trumptwitterarchive.com/
+
+Kearney, M. W. (2019). rtweet: Collecting and analyzing Twitter data, Journal of Open Source Software, 4, 42. 1829.
+  doi:10.21105/joss.01829 (R package version 0.7.0)
+
+R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing,
+  Vienna, Austria. URL https://www.R-project.org/.
+  
+RStudio Team (2020). RStudio: Integrated Development for R. RStudio, PBC, Boston, MA URL http://www.rstudio.com/.
+
+Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686,
+  https://doi.org/10.21105/joss.01686
