@@ -1,19 +1,17 @@
 ### Just how similar is a given Trump tweet to a line from Hitler’s Mein Kampf? Let’s use cosine similarity to find out…
 
 
-This script uses four packages: ```tidyverse``` (notation), ```quanteda``` (text
-pre-processing and cosine similarity), ```readr``` (reading in
-data), and ```rtweet``` (importing and processing Twitter API data). Trump tweets through 7/26/20 are available in this repository courtesy of [Trump Twitter Archive](http://trumptwitterarchive.com/). You’ll
+This script uses three packages: ```tidyverse``` (basic data manipulation), ```quanteda``` (text
+pre-processing and cosine similarity), and ```rtweet``` (importing and processing Twitter API data). Trump tweets through 7/26/20 are available in this repository courtesy of [Trump Twitter Archive](http://trumptwitterarchive.com/). You’ll
 need to un-comment the install.packages() calls if you haven’t installed
 these packages.
 
 ``` r
 #install.packages(tidyverse)
 #install.packages(quanteda)
-#install.packages(readr)
 #install.packages(rtweet)
 
-library(tidyverse,quietly=T); library(quanteda,quietly=T); library(readr,quietly=T); library(rtweet,quietly=T)
+library(tidyverse,quietly=T); library(quanteda,quietly=T); library(rtweet,quietly=T)
 ```
 
 As of 7/26/20, Trump has produced **43,137 original tweets** (excluding
