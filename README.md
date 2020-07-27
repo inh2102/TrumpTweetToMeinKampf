@@ -86,22 +86,22 @@ Time to turn a Trump tweet into Mein Kampf. Can you tell the difference?
 ``` r
 select_trump_tweet()
 ```
-```
+``` r
 The FAKE NEWS media (failing @nytimes, @NBCNews, @ABC, @CBS, @CNN) is not my enemy, it is the enemy of the American People!
-```
+
     ## Trump tweet selected!
     ## 
     ## Searching lines from Mein Kampf...
     ## 
     ## Done! Top 5 matching results:
 
-```
+
     1 The result was that the enemies of the Republic ceased to oppose the Republic as such and helped to subjugate those who were also enemies of the Republic, though for quite different reasons 
     
     2 Only the enemies of the two countries, Germany and Russia, could have an active interest in such a war under these circumstances 
     
     3 It is the task of the propagandist to recruit the followers and it is the task of the organizer to select the members 
-    ## 
+     
     4 Here again it is the fault of the education given our young people 
     
     5 Those who effectively combat this mortal enemy of our people, who is at the same time the enemy of all Aryan peoples and all culture, can only expect to arouse opposition on the part of this race and become the object of its slanderous attacks
