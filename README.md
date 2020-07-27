@@ -2,9 +2,9 @@
 
 ### Just how similar is a given Trump tweet to a line from Hitler’s Mein Kampf? Let’s find out…
 
-This script uses four packages: tidyverse (notation), quanteda (text
-pre-processing and cosine similarity calculation), readr (reading in
-data), and rtweet (importing and processing Twitter API data). You’ll
+This script uses four packages: ```diff - tidyverse``` (notation), ```diff - quanteda``` (text
+pre-processing and cosine similarity calculation), ```diff - readr``` (reading in
+data), and ```diff - rtweet``` (importing and processing Twitter API data). You’ll
 need to un-comment the install.packages() calls if you haven’t installed
 these packages.
 
