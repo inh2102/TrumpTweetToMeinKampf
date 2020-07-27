@@ -3,7 +3,7 @@
 
 This script uses four packages: ```tidyverse``` (notation), ```quanteda``` (text
 pre-processing and cosine similarity), ```readr``` (reading in
-data), and ```rtweet``` (importing and processing Twitter API data). You’ll
+data), and ```rtweet``` (importing and processing Twitter API data). Trump tweets through 7/26/20 are available in this repository courtesy of [Trump Twitter Archive](http://trumptwitterarchive.com/). You’ll
 need to un-comment the install.packages() calls if you haven’t installed
 these packages.
 
