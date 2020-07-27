@@ -1,8 +1,8 @@
 ### Just how similar is a given Trump tweet to a line from Hitler’s Mein Kampf? Let’s use cosine similarity find out…
 
-This script uses four packages: tidyverse (notation), quanteda (text
-pre-processing and cosine similarity calculation), readr (reading in
-data), and rtweet (importing and processing Twitter API data). You’ll
+This script uses four packages: ```tidyverse``` (notation), ```quanteda``` (text
+pre-processing and cosine similarity calculation), ```readr``` (reading in
+data), and ```rtweet``` (importing and processing Twitter API data). You’ll
 need to un-comment the install.packages() calls if you haven’t installed
 these packages.
 
@@ -15,7 +15,7 @@ these packages.
 library(tidyverse,quietly=T); library(quanteda,quietly=T); library(readr,quietly=T); library(rtweet,quietly=T)
 ```
 
-As of 7/26/20, Trump has produced 43,137 original tweets (excluding
+As of 7/26/20, Trump has produced **43,137 original tweets** (excluding
 retweets). Let’s read those in along with all 10,317 lines of Mein
 Kampf:
 
@@ -27,14 +27,14 @@ MeinKampf <- tibble(data.frame(matrix(unlist(MeinKampf), nrow=10317, byrow=T),st
 df <- MeinKampf %>% rename(text = matrix.unlist.MeinKampf...nrow...10317..byrow...T.)
 ```
 
-Mein Kampf text pre-processing:
+*Mein Kampf text pre-processing:*
 
 ``` r
 hitlercorp <- corpus(df$text)
 hitlerdfm <- tokens(hitlercorp) %>% tokens_ngrams(n=1:3) %>% dfm(tolower=TRUE,remove_url=TRUE,stem=TRUE,remove_punct=TRUE,remove=c(stopwords("english")))
 ```
 
-Here we define the function:
+*Here we define the function:*
 
 ``` r
 select_trump_tweet <- function() {
