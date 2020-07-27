@@ -85,8 +85,6 @@ Time to turn a Trump tweet into Mein Kampf. Can you tell the difference?
 
 ``` r
 select_trump_tweet()
-```
-``` r
 Which Trump tweet would you like to view? (A number from 1-43137) 42164
 ```
 
