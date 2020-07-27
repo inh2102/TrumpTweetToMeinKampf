@@ -1,2 +1,2 @@
-# TrumpTweetToMeinKampf
+# Trump Tweet to Mein Kampf
 Just how similar is a given Trump tweet to a line from Hitler's Mein Kampf? Let's find out...
