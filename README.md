@@ -2,9 +2,9 @@
 
 ### Just how similar is a given Trump tweet to a line from Hitler’s Mein Kampf? Let’s find out…
 
-This script uses four packages: ```diff - tidyverse``` (notation), ```diff - quanteda``` (text
-pre-processing and cosine similarity calculation), ```diff - readr``` (reading in
-data), and ```diff - rtweet``` (importing and processing Twitter API data). You’ll
+This script uses four packages: ```tidyverse``` (notation), ```quanteda``` (text
+pre-processing and cosine similarity calculation), ```readr``` (reading in
+data), and ```rtweet``` (importing and processing Twitter API data). You’ll
 need to un-comment the install.packages() calls if you haven’t installed
 these packages.
 
@@ -48,7 +48,7 @@ library(tidyverse); library(quanteda); library(readr); library(rtweet)
     ## 
     ##     flatten
 
-As of 7/26/20, Trump has produced 43,137 original tweets (excluding
+As of 7/26/20, Trump has produced **43,137 original tweets** (excluding
 retweets). Let’s read those in along with all 10,317 lines of Mein
 Kampf:
 
@@ -69,14 +69,14 @@ MeinKampf <- tibble(data.frame(matrix(unlist(MeinKampf), nrow=10317, byrow=T),st
 df <- MeinKampf %>% rename(text = matrix.unlist.MeinKampf...nrow...10317..byrow...T.)
 ```
 
-Mein Kampf text pre-processing:
+*Mein Kampf text pre-processing:*
 
 ``` r
 hitlercorp <- corpus(df$text)
 hitlerdfm <- tokens(hitlercorp) %>% tokens_ngrams(n=1:3) %>% dfm(tolower=TRUE,remove_url=TRUE,stem=TRUE,remove_punct=TRUE,remove=c(stopwords("english")))
 ```
 
-Here we define the function:
+*Here we define the function:*
 
 ``` r
 select_trump_tweet <- function() {
@@ -128,20 +128,22 @@ Time to turn a Trump tweet into Mein Kampf. Can you tell the difference?
 select_trump_tweet()
 ```
 
-    ## The FAKE NEWS media (failing @nytimes, @NBCNews, @ABC, @CBS, @CNN) is not my enemy, it is the enemy of the American People!
-    ## 
+``` 
+The FAKE NEWS media (failing @nytimes, @NBCNews, @ABC, @CBS, @CNN) is not my enemy, it is the enemy of the American People!
+```
     ## Trump tweet selected!
     ## 
     ## Searching lines from Mein Kampf...
     ## 
     ## Done! Top 5 matching results:
-    ## 
-    ## 1 The result was that the enemies of the Republic ceased to oppose the Republic as such and helped to subjugate those who were also enemies of the Republic, though for quite different reasons 
-    ## 
-    ## 2 Only the enemies of the two countries, Germany and Russia, could have an active interest in such a war under these circumstances 
-    ## 
-    ## 3 It is the task of the propagandist to recruit the followers and it is the task of the organizer to select the members 
-    ## 
-    ## 4 Here again it is the fault of the education given our young people 
-    ## 
-    ## 5 Those who effectively combat this mortal enemy of our people, who is at the same time the enemy of all Aryan peoples and all culture, can only expect to arouse opposition on the part of this race and become the object of its slanderous attacks
+```
+    1 The result was that the enemies of the Republic ceased to oppose the Republic as such and helped to subjugate those who were also enemies of the Republic, though for quite different reasons 
+
+    2 Only the enemies of the two countries, Germany and Russia, could have an active interest in such a war under these circumstances 
+
+    3 It is the task of the propagandist to recruit the followers and it is the task of the organizer to select the members 
+
+    4 Here again it is the fault of the education given our young people 
+
+    5 Those who effectively combat this mortal enemy of our people, who is at the same time the enemy of all Aryan peoples and all culture, can only expect to arouse opposition on the part of this race and become the object of its slanderous attacks
+```
