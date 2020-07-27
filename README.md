@@ -111,7 +111,7 @@ Citations:
 
 Benoit K, Watanabe K, Wang H, Nulty P, Obeng A, Müller S, Matsuo A (2018). “quanteda: An R package for the quantitative
 analysis of textual data.” _Journal of Open Source Software_, *3*(30), 774. doi: 10.21105/joss.00774 (URL:
-https://doi.org/10.21105/joss.00774), <URL: https://quanteda.io>.
+https://doi.org/10.21105/joss.00774), URL: https://quanteda.io.
 
 Brown B. Trump Twitter Archive [Internet]. Trumptwitterarchive.com. 2019. Available from: http://www.trumptwitterarchive.com/
 
