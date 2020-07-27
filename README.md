@@ -2,7 +2,7 @@
 
 
 This script uses four packages: ```tidyverse``` (notation), ```quanteda``` (text
-pre-processing and cosine similarity calculation), ```readr``` (reading in
+pre-processing and cosine similarity), ```readr``` (reading in
 data), and ```rtweet``` (importing and processing Twitter API data). You’ll
 need to un-comment the install.packages() calls if you haven’t installed
 these packages.
