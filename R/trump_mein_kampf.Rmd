@@ -9,15 +9,14 @@ output:
 
 ### Just how similar is a given Trump tweet to a line from Hitler's Mein Kampf? Let's find out...
 
-This script uses four packages: tidyverse (notation), quanteda (text pre-processing and cosine similarity calculation), readr (reading in data), and rtweet (importing and processing Twitter API data). You'll need to un-comment the install.packages() calls if you haven't installed these packages.
+This script uses four packages: tidyverse (basic data manipulation), quanteda (text pre-processing and cosine similarity calculation), and rtweet (importing and processing Twitter API data). You'll need to un-comment the install.packages() calls if you haven't installed these packages.
 
 ```{r}
 #install.packages(tidyverse)
 #install.packages(quanteda)
-#install.packages(readr)
 #install.packages(rtweet)
 
-library(tidyverse,quietly=T); library(quanteda,quietly=T); library(readr,quietly=T); library(rtweet,quietly=T)
+library(tidyverse,quietly=T); library(quanteda,quietly=T); library(rtweet,quietly=T)
 ```
 
 As of 7/26/20, Trump has produced 43,137 original tweets (excluding retweets). Let's read those in along with all 10,317 lines of Mein Kampf:
