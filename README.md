@@ -118,7 +118,7 @@ https://doi.org/10.21105/joss.00774), URL: https://quanteda.io.
 Brown B. Trump Twitter Archive [Internet]. Trumptwitterarchive.com. 2019. Available from: http://www.trumptwitterarchive.com/
 
 Kearney, M. W. (2019). rtweet: Collecting and analyzing Twitter data, Journal of Open Source Software, 4, 42. 1829.
-  doi:10.21105/joss.01829 (R package version 0.7.0)
+  doi:10.21105/joss.01829 (R package version 0.7.0).
 
 R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing,
   Vienna, Austria. URL https://www.R-project.org/.
@@ -126,4 +126,4 @@ R Core Team (2020). R: A language and environment for statistical computing. R F
 RStudio Team (2020). RStudio: Integrated Development for R. RStudio, PBC, Boston, MA URL http://www.rstudio.com/.
 
 Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686,
-  https://doi.org/10.21105/joss.01686
+  https://doi.org/10.21105/joss.01686.
